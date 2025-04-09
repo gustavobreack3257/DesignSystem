@@ -1,0 +1,65 @@
+{
+  "name": "@ignite-ui/docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build-vite": "tsc -b && vite build",
+    "build": "storybook build -c .storybook -o storybook-static",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy-storybook": "storybook-to-ghpages",
+    "dev-storybook": "storybook dev -p 6006"
+  },
+  "storybook-to-ghpages": {
+    "branch": "gh-pages",
+    "directory": "storybook-static"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/react": "*",
+    "@ignite-ui/tokens": "*",
+    "@ignite-ui/ts-config": "*",
+    "@mdx-js/react": "^3.1.0",
+    "@phosphor-icons/react": "^2.1.7",
+    "polished": "^4.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-a11y": "^8.6.12",
+    "@storybook/addon-docs": "^8.6.9",
+    "@storybook/addon-essentials": "^8.6.7",
+    "@storybook/addon-onboarding": "^8.6.7",
+    "@storybook/blocks": "^8.6.7",
+    "@storybook/cli": "^8.6.12",
+    "@storybook/experimental-addon-test": "^8.6.7",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/test": "^8.6.7",
+    "@types/node": "^22.13.11",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/browser": "^3.0.9",
+    "@vitest/coverage-v8": "^3.0.9",
+    "globals": "^15.15.0",
+    "playwright": "^1.51.1",
+    "storybook": "^8.6.12",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "overrides": {
+    "string-width-cjs": "4.2.2"
+  }
+}
