@@ -1,4 +1,4 @@
-import type { Meta, StoryObj, StoryContext } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '../../../react/src/index'
 import { ArrowRight } from '@phosphor-icons/react'
 
