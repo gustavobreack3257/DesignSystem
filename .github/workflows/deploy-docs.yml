@@ -1,7 +1,6 @@
-name: Deploy docs
+ name: Deploy docs
 
  on:
-
    push:
      branches:
        - main
@@ -23,7 +22,7 @@ name: Deploy docs
        - run: npm run build
 
        - name: Deploy storybook
-         working-directory: ../../packages/docs
+         working-directory: ./packages/docs
          run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
          env:
-           GH_TOKEN:   ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
