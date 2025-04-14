@@ -20,6 +20,9 @@
        - run: npm ci
 
        - run: npm run build
+         env:
+           TURBO_TOKEN: f1vQZh0PxcYdnoJ5MTyPuZTM
+           TURBO_TEAM: gustavo-costa-souzas-projects
 
        - name: Deploy storybook
          working-directory: ./packages/docs
