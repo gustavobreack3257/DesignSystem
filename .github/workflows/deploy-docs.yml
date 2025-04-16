@@ -23,7 +23,7 @@
 
        - run: npm run build
          env:
-           TURBO_TOKEN: f1vQZh0PxcYdnoJ5MTyPuZTM
+           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
            TURBO_TEAM: gustavo-costa-souzas-projects
 
        - name: Deploy storybook

@@ -34,7 +34,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_Token }}
-          TURBO_TOKEN: f1vQZh0PxcYdnoJ5MTyPuZTM
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: gustavo-costa-souzas-projects
 
       - name: Send a Slack notification if a publish happens
