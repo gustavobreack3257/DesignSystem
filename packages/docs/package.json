@@ -27,6 +27,8 @@
     "@ignite-ui/ts-config": "*",
     "@mdx-js/react": "^3.1.0",
     "@phosphor-icons/react": "^2.1.7",
+    "@radix-ui/react-toast": "^1.2.11",
+    "@radix-ui/react-tooltip": "^1.2.4",
     "polished": "^4.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
